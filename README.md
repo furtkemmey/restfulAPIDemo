@@ -9,26 +9,28 @@
 - post請求使用body-parser
 
         app.use(bodyParser.urlencoded({extended: false}));
-        app.use(bodyParser.json());
-        
+        app.use(bodyParser.json());        
 - mongoose
   - 連線設定
   - schema定義
   - 定義objectID
 
         mongoose.Schema.Types.ObjectId
-
   - 使用ObjectID
-  
-        mongoose.Types.ObjectId()
-        
+
+        mongoose.Types.ObjectId()               
   - ref跟populate()
+  - 搜尋
 - 錯誤處理 app.use(function(error, req, res, next)
 - CORS 設定
 - bcrypt密碼加密
   - bcrypt.hash()
   - bcrypt.compare()
 - multer 上傳圖片
+  - 上傳目錄
+  - 檔案命稱
+  - 副檔限制
+  - 檔案大小限制
   - 設定 multer.diskStorage()
   - router.post('/', upload.single('productImage'));
 - jsonwebtoken
