@@ -1,4 +1,12 @@
 # restfulAPIDemo
+## 執行
+    npm run dev
+## 查看mongo資料庫
+    mongo // 執行mongo
+    show dbs
+    use product
+    show collections
+    db.userd.find()
 ## 學習知識
 
 - express 4.0路由 新的寫法
