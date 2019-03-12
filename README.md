@@ -8,18 +8,18 @@
     show collections
     db.userd.find()
 ## API Endpoint
-###products
+### products
 - GET /products/
 - POST /products/
 - GET /products/:productID
 - PATCH /products/:productID
 - DELETE /products/:productID
-###orders
+### orders
 - GET /orders/
 - POST /orders/
 - GET /orders/:orderID
 - DELETE /orders/:orderID
-###user
+### user
 - POST /user/signup
 - POST /user/login
 - DELETE /user/:userID
