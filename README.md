@@ -7,6 +7,22 @@
     use product
     show collections
     db.userd.find()
+## API Endpoint
+###products
+- GET /products/
+- POST /products/
+- GET /products/:productID
+- PATCH /products/:productID
+- DELETE /products/:productID
+###orders
+- GET /orders/
+- POST /orders/
+- GET /orders/:orderID
+- DELETE /orders/:orderID
+###user
+- POST /user/signup
+- POST /user/login
+- DELETE /user/:userID
 ## 學習知識
 
 - express 4.0路由 新的寫法
@@ -28,7 +44,9 @@
 
         mongoose.Types.ObjectId()               
   - ref跟populate()
-  - 搜尋
+  - mongoose-timestamp, updatedAt, createdAt
+        productSchema.plugin(timestamp);
+
 - 錯誤處理 app.use(function(error, req, res, next)
 - CORS 設定
 - bcrypt密碼加密
@@ -45,3 +63,7 @@
   - 簽發 jwt.sign() 資訊 密碼 到期
   - 寫middleware (check-auth.js) jwt.verify()
   - 然後router.use(checkAuth);
+- dotenv
+  - .env file
+  - require('dotenv').config()
+  - process.env.JWT_KEY
